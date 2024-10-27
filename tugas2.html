@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas2</title>
+    <style>
+    table, th, td{
+        border: 1px solid rgb(187, 2, 2);
+    }
+
+
+    h3{
+        background-color: cadetblue;
+        color: black;
+        font-family: sans-serif;
+        font-size: 18px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 0, 0, 0.447);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+.navbar .navbar-logo span{
+    color: rgb(111, 23, 23);
+}
+
+.navbar .navbar-nav a{
+    color: #000000;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.pricelist{
+    text-align: center;
+}
+    </style>
+
+</head>
+<nav class="navbar">
+    <a href="#home" class="navbar-logo">
+        Mie <span>Gacoan</span>
+    </a>
+    <div class="navbar-nav">
+        <a href="#pricelist">pricelist</a>
+        <a href="#menu">Daftar menu</a>
+        <a href="#minuman">Daftar minuman</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+</nav>
+<body>
+    <body style="background-color: rgb(251, 251, 251); padding-top: 5%;">
+        <section class="daftar" style="color: rgb(0, 0, 0);">
+            <h3>Tentang gacoan</h3>
+            <p>Mie Gacoan merupakan salah satu restoran yang paling populer selama beberapa tahun belakangan ini. Bagaimana tidak, restoran yang menjual mie sebagai menu utamanya ini memiliki banyak peminat dan menjadi yang paling laris jika dibandingkan dengan restoran sejenis lainnya. 
+                
+                Sudah bukan rahasia lagi jika makanan pedas menjadi salah satu yang paling diminati belakangan ini. Berbagai menu pedas seperti ini bahkan menjadi tren tersendiri dan banyak hadir dalam berbagai jenis makanan yang berbeda. Hal inilah yang coba disajikan Mie Gacoan di dalam berbagai menu mie yang mereka jual. 
+                
+                Para pecinta mie dan juga makanan pedas menjadi pelanggan utama restoran yang satu ini. Bisa dibayangkan jika pada akhirnya restoran ini menjadi salah satu tempat favorit anak muda, terutama yang mereka yang menyukai berbagai makanan pedas. </p>
+            <h1 class="pricelist" id="pricelist">Pricelist mie gacoan</h1>
+                <h3>daftar menu</h3>
+            <table style="width: 100%; text-align: center; padding: 8px; border-spacing: 7px;">
+                <th colspan="4" id="menu">Daftar menu</th>
+                <tr>
+                    <th>nama</th>
+                    <th>harga</th>
+                    <th>jumlah</th>
+                </tr>
+                <tr>
+                    <td>mie gacoan</td>
+                    <td>15000</td>
+                    <td>1 buah</td>
+                </tr>
+                <tr>
+                    <td>mie hompimpa</td>
+                    <td>15000</td>
+                    <td>1 Buah</td>
+                </tr>
+            </table>
+            <h4>mie gacoan</h4>
+            <p> <span style="color: blue;">mie gacoan</span> adalah mie pedas yang mempunyai rasa manis, mie ini memiliki tingkat kepedasan dari level 1 sampai level 8</p>
+            <h4>mie hompimpa</h4>
+            <p> <span style="color: blue;">mie hompimpa</span> adalah mie pedas yang mempunyai rasa asin, mie ini memiliki tingkat kepedasan dari level 1 sampai level 8</p>
+        <h3>daftar minuman</h3>
+            <table style="width: 100%; text-align: center; padding: 8px; border-spacing: 7px;">
+                <th colspan="4" id="minuman">Daftar minuman</th>
+                <tr>
+                    <th>nama</th>
+                    <th>harga</th>
+                    <th>jumlah</th>
+                </tr>
+                <tr>
+                    <td>es gobak sodor</td>
+                    <td>13000</td>
+                    <td>1 buah</td>
+                </tr>
+                <tr>
+                    <td>es petak umpet</td>
+                    <td>13000</td>
+                    <td>1 Buah</td>
+                </tr>
+            </table>
+            <h4>es gobak sodor</h4>
+            <p> <span style="color: blue;">es gobak sodor</span>adalah menu minuman di Mie Gacoan yang berisi es buah, jelly, dan cincau. Es ini memiliki rasa manis yang dapat meredakan pedasnya hidangan Mie Gacoan.</p>
+            <h4>es petak umpet</h4>
+            <p> <span style="color: blue;">es petak umpet</span> adalah menu minuman di Mie Gacoan yang terbuat dari potongan buah segar dan perasan jeruk nipis. Es ini memiliki rasa asam segar dan cocok untuk menyegarkan tenggorokan setelah makan pedas.</p>
+                <video src="profile.mp4" width="500" height="240" controls ></video>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GXNg4od0xMo?si=t5CtpFrlNJmJcYQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7167.647607895194!2d106.74797432323392!3d-6.310123663163759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef00478a5be3%3A0x8628af8f919edb12!2sMie%20Gacoan%20Tangsel%20-%20Juanda%20Ciputat!5e0!3m2!1sid!2sid!4v1730021992392!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h3>Toko Cabang</h3>
+                    <ul style="list-style: square;">
+                        <li>ciputat</li>
+                        <p>Jl. Ir H. Juanda No.78, Cemp. Putih, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412</p>
+                    </ul>
+                </div>
+                <form action="" id="kontak">
+                    <label for="fname">Your Email: </label>
+                    <input type="text" id="fname" name="fname" /><br /><br />
+                    <label for="lname">Your Phone: </label>
+                    <input type="text" id="lname" name="lname" /><br /><br />
+                    <input type="submit" value="Submit" />
+                  </form>
+            </body>
+            </html>
